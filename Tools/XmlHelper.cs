@@ -8,6 +8,9 @@ using System.Xml.Serialization;
 
 namespace Tools
 {
+    /// <summary>
+    /// Exemple de ce que l'on peut trouver typiquement dans une couche Tools
+    /// </summary>
     public class XmlHelper
     {
         public static void Serialize<T>(T myObject, string fullPath) where T: class, new()
