@@ -25,10 +25,22 @@ namespace CIA.DTO
         [MinLength(length:3, ErrorMessage ="Le nom est trop court")]
         [MaxLength(length:30, ErrorMessage ="Le nom est trop long.")]
         public string Nom { get; set; }
+        /// <summary>
+        /// Prénom de la personne
+        /// </summary>
         public string Prenom { get; set; }
+        /// <summary>
+        /// Age de la personne
+        /// </summary>
         public int Age { get; set; }
 
-        public int SocieteID { get; set; }    
+        ///// <summary>
+        ///// FK de la societe où travaille l'employé
+        ///// </summary>
+        //public int SocieteID { get; set; }    
+        /// <summary>
+        /// Objet Employeur dont dépend l'employé: N --> 1
+        /// </summary>
         public EntitySociete Employeur { get; set; }   
     }
 }

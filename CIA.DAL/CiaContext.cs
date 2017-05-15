@@ -23,5 +23,10 @@ namespace CIA.DAL
 
         public virtual DbSet<EntityPersonne> Employes { get; set; }
         public virtual DbSet<EntitySociete> Employeurs { get; set; }
+
+        public void HackEntityFramework()
+        {
+            System.Data.Entity.SqlServer.SqlProviderServices hack = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
+        }
     }
 }

@@ -45,14 +45,27 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CIA.BLL\CIA.BLL.csproj">
       <Project>{fa33f7eb-3ce9-4ea9-8fc7-b0449ada33b0}</Project>
       <Name>CIA.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CIA.DAL\CIA.DAL.csproj">
+      <Project>{1a5130fd-7272-4324-af20-21044a54d865}</Project>
+      <Name>CIA.DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\CIA.DTO\CIA.DTO.csproj">
       <Project>{e30a2757-b753-494a-9eb0-c26ff12503f5}</Project>

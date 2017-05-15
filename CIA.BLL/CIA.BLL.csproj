@@ -52,6 +52,10 @@
       <Project>{e30a2757-b753-494a-9eb0-c26ff12503f5}</Project>
       <Name>CIA.DTO</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{a34fa997-4044-452e-91c8-6b36011d5eb5}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
